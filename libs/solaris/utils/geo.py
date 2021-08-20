@@ -13,9 +13,11 @@ from shapely.wkt import loads
 from shapely.geometry import Point, Polygon, LineString
 from shapely.geometry import MultiLineString, MultiPolygon, mapping, box, shape
 from shapely.geometry.collection import GeometryCollection
-from shapely.ops import cascaded_union
+from shapely.ops import cascaded_unio
+#fixing improper importing
 from osgeo import osr
 from osgeo import gdal
+#end of fixing
 import json
 from warnings import warn
 import sys
